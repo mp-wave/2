@@ -14,7 +14,7 @@ import streamlit as st
 from streamlit.server.server import Server
 from streamlit.legacy_caching.hashing import _CodeHasher
 from io import BytesIO
-
+import openpyxl
 
 
 zo = 12
@@ -791,8 +791,3 @@ def ZScore(state):
 if __name__ == "__main__":
     main()
 
-
-
-# MatchPlayerPDF('NWSL Fall Series', 20201005, 3775665, 'Houston Dash', 'Houston Dash', 'North Carolina Courage')
-# MatchPlayerPDF('NWSL Challenge Cup', 20210416, 3787416, 'Seattle Reign', 'Seattle Reign', 'Houston Dash')
-# to run : streamlit run "/Users/michaelpoma/Documents/Python/Codes/Wave Sports Science App.py"
