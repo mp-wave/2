@@ -150,21 +150,6 @@ def _get_state(hash_funcs=None):
     return session._custom_session_state
 
 
-datafile = cbook.get_sample_data('/Users/michaelpoma/Documents/Python/PDF Pics/Wave PDF Header.png', asfileobj=False)
-im = image.imread(datafile)
-
-# fontPathBold = "/Users/michaelpoma/Library/Fonts/EBGaramond-Bold.ttf"
-# fontPathNBold = "/Users/michaelpoma/Library/Fonts/EBGaramond-Medium.ttf"
-fontPathBold = "/Users/michaelpoma/Library/Fonts/PTSans-Bold.ttf"
-fontPathNBold = "/Users/michaelpoma/Library/Fonts/PTSans-Regular.ttf"
-titlepage = fm.FontProperties(fname=fontPathBold, size=72)
-headers = fm.FontProperties(fname=fontPathBold, size=46)
-footers = fm.FontProperties(fname=fontPathNBold, size=24)
-metrics1 = fm.FontProperties(fname=fontPathBold, size=20)
-metrics2 = fm.FontProperties(fname=fontPathBold, size=24)
-numbers = fm.FontProperties(fname=fontPathBold, size=22)
-tabletitle = fm.FontProperties(fname=fontPathBold, size=19)
-
 
 def TrainingPDF(state):
     uploaded_file = st.file_uploader("Choose a File")
